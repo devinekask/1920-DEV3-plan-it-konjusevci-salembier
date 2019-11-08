@@ -1,13 +1,4 @@
-@import "./css/reset.css";
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+body {
+  background-color: lightsalmon;
+  font-family: sans-serif;
 }
-/* stylelint-disable */
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-/* stylelint-enable */
