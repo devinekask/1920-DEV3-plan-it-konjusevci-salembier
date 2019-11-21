@@ -1,35 +1,27 @@
 <?php
 
 require_once __DIR__ . '/Controller.php';
-require_once __DIR__ . '/../dao/TodoDAO.php';
+require_once __DIR__ . '/../dao/PlannerDAO.php';
 
-class TodosController extends Controller {
+class PlannerController extends Controller {
 
-  private $todoDAO;
+  private $plannerDAO;
 
   function __construct() {
-    $this->todoDAO = new TodoDAO();
+    $this->plannerDAO = new PlannerDAO();
   }
 
   public function index() {
-    if (!empty($_POST['action'])) {
-      if ($_POST['action'] == 'insertTodo') {
-        $this->handleInsertTodo();
-      }
-    }
+    $this->set('title', 'Work it out');
 
-    $todos = $this->todoDAO->selectAll();
-    $this->set('todos', $todos);
-    $this->set('title', 'Overview');
-
-    if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
+    /*if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
       header('Content-Type: application/json');
-      echo json_encode($todos);
+      echo json_encode($workouts);
       exit();
-    }
+    }*/
   }
 
-  private function handleInsertTodo() {
+  /*private function handleInsertTodo() {
     $data = array(
       'created' => date('Y-m-d H:i:s'),
       'modified' => date('Y-m-d H:i:s'),
@@ -63,5 +55,6 @@ class TodosController extends Controller {
       exit();
     }
   }
+  */
 
 }

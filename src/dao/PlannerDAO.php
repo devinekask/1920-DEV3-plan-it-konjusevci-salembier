@@ -2,7 +2,7 @@
 
 require_once( __DIR__ . '/DAO.php');
 
-class TodoDAO extends DAO {
+class PlannerDAO extends DAO {
 
   public function selectAll(){
     $sql = "SELECT * FROM `todos`";
