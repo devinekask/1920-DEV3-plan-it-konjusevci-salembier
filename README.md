@@ -1,6 +1,5 @@
-# DEV3-1920-Plan-it
+# DEV3-1920-Plan-it Workout planner 💪
 
-Dit is een planner die aan de hand van je gemoet toestand of je
-het weer van buiten zal zeggen welke kleren dat je kan aan doen.
-Zo krijgt de gebruiker en simple en makkelijk weergave wat hij of
-zei kan aan doen aan de hand van de app.
+This a workout planner for everyone. You can add your own details so it can make a planner for you with your information. Add your age,weight,physic,your availability, ...
+And plan it right away so you can start your workouts!
+Or you can chose the template workout plans if you dont want to add your personal details. Every exercise will have there own detaied Description.
