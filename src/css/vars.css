@@ -1,3 +1,12 @@
 :root {
+  /* --Colors-- */
   --mainColor: linear-gradient(90deg, #005c97 0%, #363795 100%);
+  --descriptionColor: #e4e4e4;
+  --noteColor: #afacac;
+  /* --Fonts-- */
+  /* Weights */
+  --boldWeight: 900;
+  /* Sizes */
+  --normalSize: 1.4rem;
+  --smallerSize: 1rem;
 }
