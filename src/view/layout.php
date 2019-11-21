@@ -24,11 +24,11 @@
         </div>
         <div class="header__info">
         <p class="info__amount">0</p>
-        <p class="info__description">workouts</p>
+        <p class="info__description">kcal</p>
         </div>
         <div class="header__info">
         <p class="info__amount">0</p>
-        <p class="info__description">workouts</p>
+        <p class="info__description">dagen</p>
         </div>
       </div>
       </header>

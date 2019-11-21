@@ -35,6 +35,11 @@ main { flex: 1; }
 header {
   padding: 2rem 1.5rem;
   background: var(--mainColor);
+
+  height: 20rem;
+
+  border-bottom-left-radius: 2.2rem;
+  border-bottom-right-radius: 2.2rem;
 }
 
 .header__top {
@@ -78,6 +83,8 @@ h1 {
   align-items: center;
 
   padding: 4rem 0;
+  border-top-left-radius: 1.3rem;
+  border-top-right-radius: 1.3rem;
 }
 
 .footer__item {
@@ -88,4 +95,5 @@ h1 {
 
 .footer__text {
   margin-top: .5rem;
+  color: var(--descriptionColor);
 }
