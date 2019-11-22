@@ -3,8 +3,13 @@
 <div class="section__wrapper">
     <p class="planning__emptystate">Maak je eigen planning aan de hand van jouw gegevens.</p>
     <a href="" class="button">Maak een planning</a>
-</div>   
+</div>
 </section>
 <section class="templateplan">
 <h2>Template plan</h2>
+<ul>
+<li class="templateplan__plan"><a class="templateplan__link" href="">Bodybuilding</a></li>
+<li class="templateplan__plan"><a class="templateplan__link" href="">Bodybuilding</a></li>
+<li class="templateplan__plan"><a class="templateplan__link" href="">Bodybuilding</a></li>
+</ul>
 </section>

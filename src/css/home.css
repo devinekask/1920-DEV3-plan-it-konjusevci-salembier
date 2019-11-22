@@ -7,3 +7,15 @@
   font-size: var(--smallerSize);
   margin: 0 auto;
 }
+
+.templateplan__plan {
+  width: 80%;
+  border-radius: 1.8rem;
+  padding: 3rem;
+  margin: 0 auto;
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+  background-image: url(../assets/img/Rectangle7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
