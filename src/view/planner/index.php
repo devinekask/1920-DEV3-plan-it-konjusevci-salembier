@@ -1,9 +1,10 @@
-<section class="planning__wrapper">
-<h2 class="subtitle">Eigen planning</h2>
-<p class="emptystate">Maak je eigen planning aan de hand van jouw gegevens.</p>
-<a class="button" href="">Maak een plan</a>
+<section class="planning">
+<h2>Eigen planning</h2>
+<div class="section__wrapper">
+    <p class="planning__emptystate">Maak je eigen planning aan de hand van jouw gegevens.</p>
+    <a href="" class="button">Maak een planning</a>
+</div>   
 </section>
-<section>
-<h2 class="subtitle">Template plans</h2>
-<a href="" class="template__plan bodybuilding">Bodybuilding</a>
+<section class="templateplan">
+<h2>Template plan</h2>
 </section>

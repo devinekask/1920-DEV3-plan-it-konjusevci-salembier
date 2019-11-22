@@ -1,0 +1,9 @@
+.planning {
+  background-color: white;
+}
+
+.planning__emptystate {
+  color: var(--noteColor);
+  font-size: var(--smallerSize);
+  margin: 0 auto;
+}

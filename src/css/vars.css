@@ -3,10 +3,12 @@
   --mainColor: linear-gradient(90deg, #005c97 0%, #363795 100%);
   --descriptionColor: #e4e4e4;
   --noteColor: #afacac;
+  --backgroundColor: #f7f7f7;
   /* --Fonts-- */
   /* Weights */
   --boldWeight: 900;
   /* Sizes */
   --normalSize: 3.5rem;
+  --averageSize: 2.8rem;
   --smallerSize: 1.8rem;
 }
