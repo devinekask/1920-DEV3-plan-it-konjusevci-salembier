@@ -7,6 +7,10 @@ $routes = array(
   'home' => array(
     'controller' => 'Planner',
     'action' => 'index'
+  ),
+  'planner' => array(
+    'controller' => 'Planner',
+    'action' => 'planner'
   )
 );
 

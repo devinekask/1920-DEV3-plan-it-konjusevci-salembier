@@ -2,6 +2,12 @@
   background-color: white;
 }
 
+.planning__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .planning__emptystate {
   color: var(--noteColor);
   font-size: var(--smallerSize);

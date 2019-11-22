@@ -1,8 +1,8 @@
 <section class="planning">
 <h2>Eigen planning</h2>
-<div class="section__wrapper">
+<div class="planning__wrapper">
     <p class="planning__emptystate">Maak je eigen planning aan de hand van jouw gegevens.</p>
-    <a href="" class="button">Maak een planning</a>
+    <a href="index.php?page=planner" class="button">Maak een planning</a>
 </div>
 </section>
 <section class="templateplan">
