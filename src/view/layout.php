@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Workout planner - <?php echo $title; ?></title>
-    <?php /* NEW */ ?>
-    <?php echo $css;?>
+  <meta charset="UTF-8">
+  <meta name="description" content="Plan je eigen workouts"/>
+  <meta name="author" content="Devine"/>
+  <meta name="keywords" content="workout, planning, exercises, sport"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workout planner - <?php echo $title; ?></title>
+  <?php echo $css;?>
   </head>
   <body>
   <header class="header">
@@ -14,7 +17,6 @@
 <rect y="10" width="38" height="4" rx="2" fill="white"/>
 <rect y="20" width="38" height="4" rx="2" fill="white"/>
 </svg>
-
         <h1><?php echo $title; ?></h1>
         <p class="null">null</p>
       </div>
