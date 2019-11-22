@@ -1,5 +1,6 @@
 @import './css/reset.css';
 @import './css/vars.css';
+@import './css/home.css';
 
 html {
   height: 100%;
