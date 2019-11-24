@@ -47,6 +47,7 @@
 <input id="sun" type="checkbox" class="checkbox__button"></label>
 </div>
 </div>
+<input type="submit" value="Next step" class='button button-submit'>
 </form>
 </div>
 </section>
