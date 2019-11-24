@@ -138,3 +138,7 @@ h2 {
   color: var(--descriptionColor);
   font-size: var(--smallerSize);
 }
+
+.hidden {
+  display: none;
+}

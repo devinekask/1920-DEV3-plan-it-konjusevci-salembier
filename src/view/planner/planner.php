@@ -5,8 +5,10 @@
 <li class="step"><a class="step__link" href="">2</a></li>
 <li class="step"><a class="step__link" href="">3</a></li>
 </ul>
-<h2>choose the workouts</h2>
+<h2 class='hidden'>Planning</h2>
 <form action="" method="get">
+<div class="input__wrapper">
+<span>Choose a workout</span>
 <div class="checkbox__wrapper">
 <label>Leg day
 <input id="legday" type="checkbox" class="checkbox__button"></label>
@@ -24,6 +26,26 @@
 <input id="plank" type="checkbox" class="checkbox__button"></label>
 <label>plateau
 <input id="plateau" type="checkbox" class="checkbox__button"></label>
+</div>
+</div>
+<div class="input__wrapper">
+<span>Choose the days</span>
+<div class="checkbox__wrapper">
+<label>mon.
+<input id="mon" type="checkbox" class="checkbox__button"></label>
+<label>tues.
+<input id="tues" type="checkbox" class="checkbox__button"></label>
+<label>wens.
+<input id="wens" type="checkbox" class="checkbox__button"></label>
+<label>thurs.
+<input id="thurs" type="checkbox" class="checkbox__button"></label>
+<label>fri.
+<input id="fri" type="checkbox" class="checkbox__button"></label>
+<label>satur.
+<input id="satur" type="checkbox" class="checkbox__button"></label>
+<label>sun.
+<input id="sun" type="checkbox" class="checkbox__button"></label>
+</div>
 </div>
 </form>
 </div>
