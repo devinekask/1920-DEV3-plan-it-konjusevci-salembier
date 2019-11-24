@@ -11,6 +11,10 @@ $routes = array(
   'planner' => array(
     'controller' => 'Planner',
     'action' => 'planner'
+  ),
+  'plannerstep2' => array(
+    'controller' => 'Planner',
+    'action' => 'plannerstep2'
   )
 );
 

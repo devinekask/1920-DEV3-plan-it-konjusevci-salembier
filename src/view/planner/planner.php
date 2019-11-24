@@ -6,7 +6,7 @@
 <li class="step"><a class="step__link" href="">3</a></li>
 </ul>
 <h2 class='hidden'>Planning</h2>
-<form action="" method="get">
+<form action="index.php?page=plannerstep2" method="get">
 <div class="input__wrapper">
 <span>Choose a workout</span>
 <div class="checkbox__wrapper">
