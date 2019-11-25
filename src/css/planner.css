@@ -32,3 +32,43 @@
     }
   }
 }
+
+.input__wrapper {
+  margin-top: 3rem;
+
+  & span {
+    margin-left: 1rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: var(--averageSize);
+  }
+
+  & .checkbox__wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: wrap row;
+    width: 36.1rem;
+
+    & label {
+      text-transform: uppercase;
+      font-size: var(--smallerSize);
+      border: 1px solid #92befb;
+      width: 10.6rem;
+      padding: 6px;
+      display: flex;
+      justify-content: center;
+      margin: 6px;
+      border-radius: 17rem;
+      font-weight: 500;
+      color: #92befb;
+
+    }
+
+    & .checkbox__button {
+      opacity: 0;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}
