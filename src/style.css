@@ -1,6 +1,7 @@
 @import './css/reset.css';
 @import './css/vars.css';
 @import './css/home.css';
+@import './css/planner.css';
 
 html {
   height: 100%;
