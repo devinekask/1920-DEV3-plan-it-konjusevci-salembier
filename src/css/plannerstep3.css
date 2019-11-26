@@ -1,4 +1,46 @@
 .planner__title {
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
+.exercises__wrapper {
+  display: flex;
+
+  & .doing__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    width: 15rem;
+    margin-right: 4.1rem;
+    justify-content: center;
+    align-content: center;
+
+    & span {
+      font-size: var(--smallerSize);
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    & .checkbox__button {
+      display: none;
+      visibility: hidden;
+      position: absolute;
+    }
+
+    & label {
+      text-transform: uppercase;
+      font-size: var(--smallerSize);
+      border: 1px solid #92befb;
+      width: 15rem;
+      padding: 6px;
+      display: flex;
+      justify-content: center;
+      margin: 6px;
+      margin-left: 2rem;
+      border-radius: 17rem;
+      font-weight: 500;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

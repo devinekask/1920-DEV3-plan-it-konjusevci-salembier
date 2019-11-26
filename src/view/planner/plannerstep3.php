@@ -7,6 +7,7 @@
 </ul>
 <h2 class="planner__title">LIST OF EXERCISES</h2>
 <form action="index.php" method="get">
+<div class="exercises__wrapper">
 <div class="input__wrapper doing__wrapper">
   <span>want to do</span>
   <input checked id='running' type="checkbox" class="checkbox__button">
@@ -28,6 +29,7 @@
   <label for="paddeling">paddeling</label>
   <input id='surfing' type="checkbox" class="checkbox__button">
   <label for="surfing">surfing</label>
+</div>
 </div>
 </div>
 <div class="input__wrapper sporty__wrapper">
