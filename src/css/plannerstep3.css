@@ -6,6 +6,48 @@
 .exercises__wrapper {
   display: flex;
 
+  & .not__doing {
+    display: flex;
+    flex-flow: column wrap;
+    width: 15rem;
+    justify-content: center;
+    align-content: center;
+
+    & span {
+      font-size: var(--smallerSize);
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    & label {
+      text-transform: uppercase;
+      font-size: var(--smallerSize);
+      border: 1px solid #313131;
+      background-color: #313131;
+      width: 15rem;
+      padding: 6px;
+      display: flex;
+      justify-content: center;
+      margin: 6px;
+      border-radius: 17rem;
+      font-weight: 500;
+      color: white;
+      cursor: pointer;
+    }
+
+    & .checkbox__button {
+      display: none;
+      visibility: hidden;
+      position: absolute;
+
+      &:checked + label {
+        background-color: #92befb;
+        border: 1px solid #92befb;
+      }
+    }
+  }
+
   & .doing__wrapper {
     display: flex;
     flex-flow: column wrap;
@@ -19,12 +61,6 @@
       display: flex;
       justify-content: center;
       margin-bottom: 1rem;
-    }
-
-    & .checkbox__button {
-      display: none;
-      visibility: hidden;
-      position: absolute;
     }
 
     & label {
@@ -42,5 +78,17 @@
       color: white;
       cursor: pointer;
     }
+
+    & .checkbox__button {
+      display: none;
+      visibility: hidden;
+      position: absolute;
+
+      &:not(:checked) + label {
+        background-color: #313131;
+        border: 1px solid #313131;
+      }
+    }
+
   }
 }

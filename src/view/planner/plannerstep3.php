@@ -20,7 +20,7 @@
   <label for="walking">walking</label>
 </div>
 <div class="input__wrapper not__doing">
-  <span>dont want to do</span>
+  <span  class="notdoing">not doing</span>
   <input id='biking' type="checkbox" class="checkbox__button">
   <label for="biking">biking</label>
   <input id='hardrunning' type="checkbox" class="checkbox__button">
