@@ -1,5 +1,5 @@
 <section class="planning">
-<div class="planning__wrapper">
+<div class="planning__wrapper exercise">
 <ul class="steps">
 <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=planner">1</a></li>
 <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=plannerstep2">2</a></li>
@@ -33,14 +33,17 @@
 </div>
 </div>
 <div class="input__wrapper sporty__wrapper">
-  <span>CHOOSE YOUR DIFFICULTY</span>
+  <span class="difficulty">CHOOSE YOUR DIFFICULTY</span>
+  <div class="radio__wrapper">
   <input type="radio" name="sporty" value="easy" id="easy">
-  <label for="easy">easy</label>
+  <label class="radio__button" for="easy">easy</label>
   <input type="radio" name="sporty" value="intermediate" id="intermediate">
-  <label for="intermediate">intermediate</label>
+  <label  class="radio__button" for="intermediate">intermediate</label>
   <input type="radio" name="sporty" value="hard" id="hard">
-  <label for="hard">hard</label>
+  <label  class="radio__button" for="hard">hard</label>
 </div>
+</div>
+<input type="submit" value="Lets get them gainz" class='button button-submit'>
 </form>
 </div>
 </section>

@@ -89,6 +89,51 @@
         border: 1px solid #313131;
       }
     }
-
   }
+}
+
+.sporty__wrapper {
+
+  & .difficulty {
+    margin-left: 2rem;
+  }
+
+  & .radio__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin-top: 2rem;
+
+    & .radio__button {
+      text-transform: uppercase;
+      font-size: var(--smallerSize);
+      border: 1px solid #92befb;
+      width: 20rem;
+      padding: 6px;
+      display: flex;
+      justify-content: center;
+      margin: 6px;
+      background-color: #92befb;
+      margin-left: 2rem;
+      border-radius: 17rem;
+      font-weight: 500;
+      color: white;
+      cursor: pointer;
+    }
+
+    & input {
+      display: none;
+      visibility: hidden;
+      position: absolute;
+
+      &:checked + .radio__button {
+        background-color: white;
+        color: #92befb;
+      }
+    }
+  }
+}
+
+.exercise {
+
 }
