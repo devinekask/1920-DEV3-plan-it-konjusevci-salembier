@@ -50,6 +50,11 @@
     flex-flow: wrap row;
     width: 36.1rem;
 
+    & .checkbox__button {
+      display: none;
+      visibility: hidden;
+    }
+
     & label {
       text-transform: uppercase;
       font-size: var(--smallerSize);
@@ -63,14 +68,13 @@
       font-weight: 500;
       color: #92befb;
       cursor: pointer;
-
-      & .checkbox__button {
-        opacity: 0;
-        position: absolute;
-        cursor: pointer;
-      }
     }
   }
+}
+
+.checkbox__button:checked + label {
+  color: white;
+  background-color: #92befb;
 }
 
 .button-submit {
@@ -80,5 +84,4 @@
   width: 22rem;
   font-weight: 500;
   margin-left: 7rem;
-
 }
