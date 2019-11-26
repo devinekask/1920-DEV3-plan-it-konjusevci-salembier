@@ -63,7 +63,7 @@
       margin-bottom: 1rem;
     }
 
-    & label {
+    & .doing {
       text-transform: uppercase;
       font-size: var(--smallerSize);
       border: 1px solid #92befb;
@@ -133,4 +133,3 @@
     }
   }
 }
-

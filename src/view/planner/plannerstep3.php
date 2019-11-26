@@ -11,13 +11,13 @@
 <div class="input__wrapper doing__wrapper">
   <span>want to do</span>
   <input checked id='running' type="checkbox" class="checkbox__button">
-  <label for="running">running</label>
+  <label class="doing" for="running">running</label>
   <input checked id='cardio' type="checkbox" class="checkbox__button">
-  <label for="cardio">cardio</label>
+  <label class="doing" for="cardio">cardio</label>
   <input checked id='swimming' type="checkbox" class="checkbox__button">
-  <label for="swimming">swimming</label>
+  <label class="doing" for="swimming">swimming</label>
   <input checked id='walking' type="checkbox" class="checkbox__button">
-  <label for="walking">walking</label>
+  <label class="doing" for="walking">walking</label>
 </div>
 <div class="input__wrapper not__doing">
   <span  class="notdoing">not doing</span>
