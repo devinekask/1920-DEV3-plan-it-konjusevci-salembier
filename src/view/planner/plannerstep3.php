@@ -6,7 +6,7 @@
 <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=plannerstep3">3</a></li>
 </ul>
 <h2 class="planner__title">LIST OF EXERCISES</h2>
-<form action="index.php" method="get">
+<form action="index.php" method="post">
 <div class="exercises__wrapper">
 <div class="input__wrapper doing__wrapper">
   <span>want to do</span>
@@ -43,7 +43,7 @@
   <label  class="radio__button" for="hard">hard</label>
 </div>
 </div>
-<input type="submit" value="Lets get them gainz" class='button button-submit'>
+<div class="planning__wrapper"><input type="submit" value="Lets get them gainz" class='button button-submit'></div>
 </form>
 </div>
 </section>

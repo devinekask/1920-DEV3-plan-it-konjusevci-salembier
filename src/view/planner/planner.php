@@ -6,7 +6,7 @@
 <li class="step"><a class="step__link" href="">3</a></li>
 </ul>
 <h2 class='hidden'>Planning</h2>
-<form action="index.php?page=plannerstep2" method="get">
+<form action="index.php?page=plannerstep3" method="post">
 <div class="input__wrapper">
 <span>Choose a workout</span>
 <div class="checkbox__wrapper">
@@ -47,7 +47,7 @@
 <label for='sun'>sun.</label>
 </div>
 </div>
-<input type="submit" value="Next step" class='button button-submit'>
+<div class="planning__wrapper"><input type="submit" value="Next step" class='button button-submit'></div>
 </form>
 </div>
 </section>

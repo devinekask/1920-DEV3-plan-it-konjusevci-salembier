@@ -113,11 +113,11 @@
       display: flex;
       justify-content: center;
       margin: 6px;
-      background-color: #92befb;
+      background-color: white;
       margin-left: 2rem;
       border-radius: 17rem;
       font-weight: 500;
-      color: white;
+      color: #92befb;
       cursor: pointer;
     }
 
@@ -127,8 +127,8 @@
       position: absolute;
 
       &:checked + .radio__button {
-        background-color: white;
-        color: #92befb;
+        background-color: #92befb;
+        color: white;
       }
     }
   }
