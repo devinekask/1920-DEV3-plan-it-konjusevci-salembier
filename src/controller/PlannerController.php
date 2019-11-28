@@ -24,13 +24,7 @@ class PlannerController extends Controller {
   public function planner() {
     $this->set('title', 'Maak een plan');
   }
-  public function plannerstep2() {
-    $this->set('title', 'Maak een plan');
-  }
-
-  public function plannerstep3() {
-    $this->set('title', 'Maak een plan');
-  }
+  
   /*private function handleInsertTodo() {
     $data = array(
       'created' => date('Y-m-d H:i:s'),
