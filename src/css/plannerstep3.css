@@ -97,6 +97,13 @@
   & .difficulty {
     margin-left: 2rem;
   }
+  
+  & span {
+      font-size: var(--smallerSize);
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
 
   & .radio__wrapper {
     display: flex;

@@ -1,0 +1,21 @@
+.input__wrapper--step2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle__input2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: var(--smallerSize) !important;
+  margin-bottom: 1rem;
+}
+
+.input__step2 {
+  border: none;
+  text-align: center;
+  color: #1071fa;
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}

@@ -2,11 +2,11 @@
 <div class="planning__wrapper">
 <ul class="steps">
 <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=planner">1</a></li>
-<li class="step"><a class="step__link" href="">2</a></li>
-<li class="step"><a class="step__link" href="">3</a></li>
+<li class="step"><a class="step__link" href="index.php?page=plannerstep2">2</a></li>
+<li class="step"><a class="step__link" href="index.php?page=plannerstep3">3</a></li>
 </ul>
 <h2 class='hidden'>Planning</h2>
-<form action="index.php?page=plannerstep3" method="post">
+<form action="index.php?page=plannerstep2" method="post">
 <div class="input__wrapper">
 <span>Choose a workout</span>
 <div class="checkbox__wrapper">
