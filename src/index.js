@@ -8,6 +8,7 @@ require('./style.css');
 
     if ($doc.querySelector('h2') && $doc.querySelector('h2').textContent === 'Planning') {
       planningArray = $doc.querySelectorAll('.planning');
+
       $doc.querySelectorAll('.button').forEach($button => {
         $button.addEventListener('click', handleClickEvent);
       });
