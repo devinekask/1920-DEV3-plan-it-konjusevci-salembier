@@ -10,40 +10,40 @@
 <div class="input__wrapper">
 <span>Choose a workout</span>
 <div class="checkbox__wrapper">
-<input id="legday" type="checkbox" class="checkbox__button">
+<input id="legday" name="workouts[]" value="leg day" type="checkbox" class="checkbox__button">
 <label for='legday'>Leg day</label>
-<input id="cardio" type="checkbox" class="checkbox__button">
+<input id="cardio" name="workouts[]" value="cardio" type="checkbox" class="checkbox__button">
 <label for='cardio'>Cardio</label>
-<input id="bench" type="checkbox" class="checkbox__button">
+<input id="bench" name="workouts[]" value="bench" type="checkbox" class="checkbox__button">
 <label for='bench'>Bench</label>
-<input id="swole" type="checkbox" class="checkbox__button">
+<input id="swole" name="workouts[]" value="swole" type="checkbox" class="checkbox__button">
 <label for='swole'>swole</label>
-<input id="bulking" type="checkbox" class="checkbox__button">
+<input id="bulking" name="workouts[]" value="bulking" type="checkbox" class="checkbox__button">
 <label for='bulking'>bulking</label>
-<input id="form" type="checkbox" class="checkbox__button">
+<input id="form" name="workouts[]" value="form" type="checkbox" class="checkbox__button">
 <label for='form'>form</label>
-<input id="plank" type="checkbox" class="checkbox__button">
+<input id="plank" name="workouts[]" value="plank" type="checkbox" class="checkbox__button">
 <label for='plank'>plank</label>
-<input id="plateau" type="checkbox" class="checkbox__button">
+<input id="plateau" name="workouts[]" value="plateau" type="checkbox" class="checkbox__button">
 <label for='plateau'>plateau</label>
 </div>
 </div>
 <div class="input__wrapper">
 <span>Choose the days</span>
 <div class="checkbox__wrapper">
-<input id="mon" type="checkbox" class="checkbox__button">
+<input id="mon" name="days[]" value="monday" type="checkbox" class="checkbox__button">
 <label for='mon'>mon.</label>
-<input id="tues" type="checkbox" class="checkbox__button">
+<input id="tues" name="days[]" value="tuesday" type="checkbox" class="checkbox__button">
 <label for='tues'>tues.</label>
-<input id="wens" type="checkbox" class="checkbox__button">
-<label for='wens'>wens.</label>
-<input id="thurs" type="checkbox" class="checkbox__button">
+<input id="wens" name="days[]" value="wednesday" type="checkbox" class="checkbox__button">
+<label for='wens'>wednes.</label>
+<input id="thurs" name="days[]" value="thursday" type="checkbox" class="checkbox__button">
 <label for='thurs'>thurs.</label>
-<input id="fri" type="checkbox" class="checkbox__button">
+<input id="fri" name="days[]" value="friday" type="checkbox" class="checkbox__button">
 <label for='fri'>fri.</label>
-<input id="satur" type="checkbox" class="checkbox__button">
+<input id="satur" name="days[]" value="satruday" type="checkbox" class="checkbox__button">
 <label for='satur'>satur.</label>
-<input id="sun" type="checkbox" class="checkbox__button">
+<input id="sun" name="days[]" value="sunday" type="checkbox" class="checkbox__button">
 <label for='sun'>sun.</label>
 </div>
 </div>
@@ -104,8 +104,8 @@
   <span>want to do</span>
   <input checked id='running' type="checkbox" class="checkbox__button">
   <label class="doing" for="running">running</label>
-  <input checked id='cardio' type="checkbox" class="checkbox__button">
-  <label class="doing" for="cardio">cardio</label>
+  <input checked id='cardio1' type="checkbox" class="checkbox__button">
+  <label class="doing" for="cardio1">cardio</label>
   <input checked id='swimming' type="checkbox" class="checkbox__button">
   <label class="doing" for="swimming">swimming</label>
   <input checked id='walking' type="checkbox" class="checkbox__button">

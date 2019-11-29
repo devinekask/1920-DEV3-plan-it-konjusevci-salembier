@@ -13,6 +13,7 @@ class PlannerController extends Controller {
 
   public function index() {
     $this->set('title', 'Work it out');
+    var_dump($_POST);
 
     /*if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
       header('Content-Type: application/json');

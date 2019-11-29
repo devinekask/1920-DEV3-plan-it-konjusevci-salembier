@@ -18,7 +18,6 @@ require('./style.css');
   const handleClickEvent = e => {
     if (e.path[2].className === 'planning planning--stap3') { return; }
     e.preventDefault();
-    console.log(e);
     nextStep(e);
   };
 
