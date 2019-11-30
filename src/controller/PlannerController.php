@@ -18,6 +18,14 @@ class PlannerController extends Controller {
       if($_POST['action'] == 'insert'){
         $this->plannerDAO->insertWorkout($_POST);
         unset($_POST);
+        header('Location: index.php');
+        exit();
+      }
+      if($_POST['action'] == 'delete'){
+        $this->plannerDAO->deleteWorkout($_POST['id']);
+        unset($_POST);
+        header('Location: index.php');
+        exit();
       }
     }
 

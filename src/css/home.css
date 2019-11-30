@@ -22,7 +22,7 @@
   text-transform: uppercase;
   background-repeat: no-repeat;
   background-size: cover;
-
+  max-width: 62.1rem;
   display: flex;
   flex-direction: column;
 }
@@ -55,6 +55,17 @@
 
 .personalplan__edit {
   margin-left: auto;
+  transition: transform .3s;
+}
+
+.personalplan__edit--button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.personalplan__edit:hover {
+  transform: scale(1.2);
 }
 
 .plan--template {
