@@ -20,7 +20,7 @@
         text-transform: uppercase;
         font-size: var(--averageSize);
         margin-left: 3rem;
-        margin-right: 1rem;
+        margin-right: 5px;
       }
 
       & .diffuclty {
@@ -52,5 +52,37 @@
 }
 
 .information-js {
-  color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: var(--backgroundColorBlue);
+  align-self: center;
+  border-radius: 10px;
+  font-size: var(--smallerSize);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+
+.exercises {
+
+  & .excersise-list {
+
+    & .exersise {
+      display: flex;
+      justify-content: center;
+      color: black;
+      border-bottom: 1px solid #c1bfbf;
+      padding: 1rem;
+      margin: 3rem;
+
+      & .exercise-img {
+        margin-right: 3rem;
+      }
+
+      & .exercise-amount {
+        margin-left: 7rem;
+      }
+    }
+  }
 }

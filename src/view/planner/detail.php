@@ -11,7 +11,7 @@
 </div>
 </div>
 </div>
-<div class="information-js">Hey dit is een workt en dit de informatie ervan.</div>
+<div class="information-js hidden">Hey dit is een workt en dit de informatie ervan.</div>
 <div class="exercises">
 <ul class="excersise-list">
 <li class="exersise">
@@ -44,6 +44,7 @@
 <p class="exercise-amount">x10</p>
 </li>
 </ul>
-<a href="index.php?page=detail" class="button">Begin</a>
+<div class="planning__wrapper">
+<a href="index.php?page=detail" class="button">Begin</a></div>
 </div>
 </section>
