@@ -91,3 +91,45 @@
   display: flex;
   justify-content: center;
 }
+
+.personal {
+  color: black;
+  font-weight: var(--boldWeight);
+  text-transform: uppercase;
+  font-size: var(--averageSize);
+  display: flex;
+  justify-content: center;
+  margin-left: 1.9rem;
+  margin-right: 1rem;
+
+  & .personal__numbers {
+    text-transform: capitalize;
+    color: var(--backgroundColorBlue);
+  }
+
+  & .personal__days {
+    display: flex;
+    width: 16.9rem;
+
+    & .days {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.time {
+  color: black;
+  font-weight: var(--boldWeight);
+  text-transform: uppercase;
+  font-size: var(--averageSize);
+  display: flex;
+  justify-content: center;
+  margin-top: -2rem;
+
+  & .personal__time {
+    text-transform: capitalize;
+    color: var(--backgroundColorBlue);
+  }
+}

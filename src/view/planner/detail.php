@@ -1,6 +1,19 @@
 <section class='planning'>
 <div class="information__wrapper">
 <h2>Title of workout</h2>
+<div class="personal__workout hidden">
+<div class="personal">
+  <div class="personal__days">
+  <p>days completed <br> <span class="personal__numbers days">1 / 3</span></p>
+  </div>
+</div>
+<div class="time">
+<div class="personal-time">
+    <br>
+  <p>time <span class="personal__time">30mins</span></p></div>
+</div>
+</div>
+<div class="template">
 <div class="template__wrapper">
 <p class="information-template--workout">?</p>
 <div class="template--diffuclty">
@@ -8,6 +21,8 @@
 <div class="diffuclty diffuclty--active"></div>
 <div class="diffuclty"></div>
 <div class="diffuclty"></div>
+</div>
+</div>
 </div>
 </div>
 </div>
