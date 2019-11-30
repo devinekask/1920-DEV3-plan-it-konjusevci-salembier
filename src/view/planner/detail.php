@@ -1,4 +1,5 @@
 <section class='planning'>
+<div class="information__wrapper">
 <h2>Title of workout</h2>
 <div class="template__wrapper">
 <p class="information-template--workout">?</p>
@@ -9,6 +10,8 @@
 <div class="diffuclty"></div>
 </div>
 </div>
+</div>
+<div class="information-js">Hey dit is een workt en dit de informatie ervan.</div>
 <div class="exercises">
 <ul class="excersise-list">
 <li class="exersise">

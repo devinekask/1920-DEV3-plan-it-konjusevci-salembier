@@ -1,0 +1,33 @@
+.information__wrapper {
+  display: flex;
+
+  & .template__wrapper {
+    display: flex;
+
+    & .template--diffuclty {
+      display: flex;
+
+      & span {
+        color: black;
+      }
+
+      & .diffuclty {
+        background-color: #c4c4c4;
+        width: 1rem;
+        height: 2rem;
+      }
+
+      & .diffuclty--active {
+        background-color: var(--backgroundColorBlue);
+      }
+    }
+
+    & .information-template--workout {
+      background-color: var(--backgroundColorBlue);
+    }
+  }
+}
+
+.information-js {
+  color: black;
+}
