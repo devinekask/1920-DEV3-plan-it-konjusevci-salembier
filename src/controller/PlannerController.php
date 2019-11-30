@@ -13,12 +13,15 @@ class PlannerController extends Controller {
 
   public function index() {
     $this->set('title', 'Work it out');
+
     if(isset($_POST['action'])){
       if($_POST['action'] == 'insert'){
         $this->plannerDAO->insertWorkout($_POST);
         unset($_POST);
       }
     }
+
+    $this->set('workouts', $this->plannerDAO->selectAllWorkouts());
 
     /*if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
       header('Content-Type: application/json');

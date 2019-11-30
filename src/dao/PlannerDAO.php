@@ -12,6 +12,13 @@ class PlannerDAO extends DAO {
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
+  public function selectAllWorkouts(){
+    $sql = "SELECT * FROM `personal_workouts`";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
   public function deleteWorkout($id){
     $sql = "DELETE FROM `personal_workouts` WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);
