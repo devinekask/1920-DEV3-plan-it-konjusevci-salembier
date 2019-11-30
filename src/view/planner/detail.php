@@ -91,13 +91,13 @@
   </div>
 </div>
 <div class="information-js hidden">Hey dit is een workt en dit de informatie ervan.</div>
-<div class="extended information">
+<div class="extended__information">
   <span class="excersices-left">1/10</span>
   <a class="exit" href="index.php">+</a>
 </div>
 <div class="planning__wrapper">
-<img src="../assets/img/plank@2x.jpg" alt="plank" width="186">
-<span class="excersice-name">excersice-name</span>
+<img class="excerscie-img" src="../assets/img/plank@2x.jpg" alt="plank" width="186">
+<span class="excersice-name">Excersice name</span>
 <span class="excersice-todo">x10</span>
 <a href="index.php?page=detail" class="button button-submit">Next</a></div>
 </div>

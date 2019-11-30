@@ -133,3 +133,41 @@
     color: var(--backgroundColorBlue);
   }
 }
+
+.extended__information {
+  color: var(--greyColor);
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;;
+
+  & .exit {
+    color: var(--backgroundColorBlue);
+    font-size: 8rem;
+    transform: rotate(45deg);
+    margin-top: -4rem;
+  }
+
+  & .excersices-left {
+    margin-right: 25rem;
+  }
+}
+
+.excerscie-img {
+  margin-top: 4rem;
+
+}
+
+.excersice-name {
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 4rem;
+}
+
+.excersice-todo {
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 8rem;
+  color: var(--backgroundColorBlue);
+}
