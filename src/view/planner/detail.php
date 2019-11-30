@@ -45,6 +45,6 @@
 </li>
 </ul>
 <div class="planning__wrapper">
-<a href="index.php?page=detail" class="button">Begin</a></div>
+<a href="index.php?page=detail" class="button button-submit">Begin</a></div>
 </div>
 </section>
