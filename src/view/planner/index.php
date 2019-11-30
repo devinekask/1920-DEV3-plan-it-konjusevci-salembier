@@ -3,7 +3,6 @@
 <div class="planning__wrapper">
 <?php if(empty($workouts)){ ?>
     <p class="planning__emptystate">Maak je eigen planning aan de hand van jouw gegevens.</p>
-    <a href="index.php?page=planner" class="button">Maak een planning</a>
 <?php }else{ ?>
     <ul class="personal__plans">
     <?php foreach($workouts as $workout): ?>
@@ -30,6 +29,7 @@
         </li>
     <?php endforeach; } ?>
     </ul>
+    <a href="index.php?page=planner" class="button">Maak een planning</a>
 </div>
 </section>
 <section class="templateplan">
