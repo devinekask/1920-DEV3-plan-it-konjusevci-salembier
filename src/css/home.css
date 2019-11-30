@@ -22,15 +22,39 @@
   text-transform: uppercase;
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .personal__plans {
   width: 100%;
 }
 
+.personalplan__wrapper {
+  display: flex;
+  align-items: center;
+
+  margin-top: .5rem;
+}
+
 .plan--personal {
   width: 90%;
   background-image: url(../assets/img/Rectangle7.png);
+}
+
+.personalplan__name {
+  margin-bottom: 1rem;
+}
+
+.personalplan__text {
+  text-transform: none;
+  margin-left: .9rem;
+  font-weight: var(--thinWeight);
+}
+
+.personalplan__edit {
+  margin-left: auto;
 }
 
 .plan--template {

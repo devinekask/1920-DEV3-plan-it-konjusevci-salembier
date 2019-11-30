@@ -66,6 +66,10 @@ a {
   font-weight: 500;
 }
 
+p {
+  font-size: var(--smallerSize);
+}
+
 .button {
   background: var(--mainColor);
   border-radius: 2rem;

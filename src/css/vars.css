@@ -6,6 +6,7 @@
   --backgroundColor: #f7f7f7;
   /* --Fonts-- */
   /* Weights */
+  --thinWeight: 100;
   --boldWeight: 900;
   /* Sizes */
   --normalSize: 2.5rem;
