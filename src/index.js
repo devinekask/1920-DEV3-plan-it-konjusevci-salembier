@@ -4,12 +4,12 @@ require('./style.css');
   let planningArray = [];
 
   const init = () => {
-    const $doc = document.querySelector('main');
+    const $doc = document.getElementsByClassName('planning--stap1');
 
-    if ($doc.querySelector('h2') && $doc.querySelector('h2').textContent === 'Planning') {
-      planningArray = $doc.querySelectorAll('.planning');
+    if ($doc.length !== 0) {
+      planningArray = Array.from(document.querySelectorAll('.planning'));
 
-      $doc.querySelectorAll('.button').forEach($button => {
+      document.querySelectorAll('.button').forEach($button => {
         $button.addEventListener('click', handleClickEvent);
       });
       hideMenus();
@@ -17,23 +17,21 @@ require('./style.css');
   };
 
   const handleClickEvent = e => {
-    if (e.path[2].className === 'planning planning--stap3') { return; }
+    if (planningArray.length <= 1) { return; }
     e.preventDefault();
-    nextStep(e);
+    nextStep();
   };
 
-  const nextStep = e => {
-    e.path[3].style.display = 'none';
-    console.log(e.path[3].nextSibling);
-    e.path[3].nextSibling.nextSibling.style.display = '';
+  const nextStep = () => {
+    planningArray.shift().style.display = 'none';
+    planningArray[0].style.display = '';
   };
 
   const hideMenus = () => {
     planningArray.forEach($section => {
-      if ($section.className === 'planning planning--stap1') { true; } else {
-        $section.style.display = 'none';
-      }
+      $section.style.display = 'none';
     });
+    planningArray[0].style.display = '';
   };
 
   init();
