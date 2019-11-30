@@ -14,14 +14,26 @@
   margin: 0 auto;
 }
 
-.templateplan__plan {
-  width: 95%;
+.plan {
   border-radius: 1.8rem;
   padding: 3rem;
   margin: 0 auto;
   margin-bottom: 1.8rem;
   text-transform: uppercase;
-  background-image: url(../assets/img/Rectangle7.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.personal__plans {
+  width: 100%;
+}
+
+.plan--personal {
+  width: 90%;
+  background-image: url(../assets/img/Rectangle7.png);
+}
+
+.plan--template {
+  width: 95%;
+  background-image: url(../assets/img/Rectangle7.png);
 }
