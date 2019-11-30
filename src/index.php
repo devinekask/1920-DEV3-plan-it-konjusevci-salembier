@@ -12,6 +12,11 @@ $routes = array(
     'controller' => 'Planner',
     'action' => 'planner'
   )
+  ,
+  'detail' => array(
+    'controller' => 'Planner',
+    'action' => 'detail'
+  )
 );
 
 if(empty($_GET['page'])) {

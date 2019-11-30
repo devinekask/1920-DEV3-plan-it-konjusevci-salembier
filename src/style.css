@@ -4,6 +4,7 @@
 @import './css/planner.css';
 @import './css/plannerstep2.css';
 @import './css/plannerstep3.css';
+@import './css/detail.css';
 
 html {
   height: 100%;
