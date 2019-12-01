@@ -8,7 +8,7 @@
             <?php foreach($workouts as $workout): ?>
             <li class="plan plan--personal">
                 <div class="personalplan__wrapper">
-                    <p class="personalplan__name"><?php echo implode(', ',explode(',',$workout['exercises'])); ?></p>
+                    <p class="personalplan__name"><?php echo implode(', ',explode(',',$workout['workouts'])); ?></p>
                     <form action="index.php" method="POST" class="personalplan__edit">
                         <input type="hidden" name="action" value="delete">
                         <input type="hidden" name="id" value="<?php echo $workout['id']; ?>">

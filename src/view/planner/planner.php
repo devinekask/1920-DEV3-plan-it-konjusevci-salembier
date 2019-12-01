@@ -12,21 +12,21 @@
       <div class="input__wrapper">
         <span>Choose a workout</span>
         <div class="checkbox__wrapper">
-          <input id="legday" name="exercises[]" value="leg day" type="checkbox" class="checkbox__button">
+          <input id="legday" name="workouts[]" value="leg day" type="checkbox" class="checkbox__button">
           <label for='legday'>Leg day</label>
-          <input id="cardio" name="exercises[]" value="cardio" type="checkbox" class="checkbox__button">
+          <input id="cardio" name="workouts[]" value="cardio" type="checkbox" class="checkbox__button">
           <label for='cardio'>Cardio</label>
-          <input id="bench" name="exercises[]" value="bench" type="checkbox" class="checkbox__button">
+          <input id="bench" name="workouts[]" value="bench" type="checkbox" class="checkbox__button">
           <label for='bench'>Bench</label>
-          <input id="swole" name="exercises[]" value="swole" type="checkbox" class="checkbox__button">
+          <input id="swole" name="workouts[]" value="swole" type="checkbox" class="checkbox__button">
           <label for='swole'>swole</label>
-          <input id="bulking" name="exercises[]" value="bulking" type="checkbox" class="checkbox__button">
+          <input id="bulking" name="workouts[]" value="bulking" type="checkbox" class="checkbox__button">
           <label for='bulking'>bulking</label>
-          <input id="form" name="exercises[]" value="form" type="checkbox" class="checkbox__button">
+          <input id="form" name="workouts[]" value="form" type="checkbox" class="checkbox__button">
           <label for='form'>form</label>
-          <input id="plank" name="exercises[]" value="plank" type="checkbox" class="checkbox__button">
+          <input id="plank" name="workouts[]" value="plank" type="checkbox" class="checkbox__button">
           <label for='plank'>plank</label>
-          <input id="plateau" name="exercises[]" value="plateau" type="checkbox" class="checkbox__button">
+          <input id="plateau" name="workouts[]" value="plateau" type="checkbox" class="checkbox__button">
           <label for='plateau'>plateau</label>
         </div>
       </div>

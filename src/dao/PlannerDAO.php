@@ -29,11 +29,12 @@ class PlannerDAO extends DAO {
   public function insertWorkout($data) {
     //$errors = $this->validate( $data );
     if (true) {
-      $sql = "INSERT INTO `personal_workouts` (`days`, `exercises`, `time`, `weight`, `height`, `age`, `sporty`) 
-      VALUES (:days, :exercises, :time, :weight, :height, :age, :sporty)";
+      $sql = "INSERT INTO `personal_workouts` (`days`, `workouts`,`exercises_id`, `time`, `weight`, `height`, `age`, `sporty`) 
+      VALUES (:days, :workouts, :exercises_id, :time, :weight, :height, :age, :sporty)";
       $stmt = $this->pdo->prepare($sql);
       $stmt->bindValue(':days', implode(',', $data['days']));
-      $stmt->bindValue(':exercises', implode(',', $data['exercises']));
+      $stmt->bindValue(':workouts', implode(',', $data['workouts']));
+      $stmt->bindValue(':exercises_id', 1);
       $stmt->bindValue(':time', $data['time']);
       $stmt->bindValue(':weight', $data['weight']);
       $stmt->bindValue(':height', $data['height']);
