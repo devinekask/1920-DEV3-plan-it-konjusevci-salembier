@@ -52,7 +52,7 @@
             <a href="index.php?page=detail&id=<?php echo $workout['id'];?>?" class="button button-submit">Begin</a></div>
     </div>
 </section>
-
+<?php foreach($excersises as $excersise): ?>
 <section class="planning planning--stap2">
     <div class="information__wrapper">
         <h2><?php echo $workout['title'] ?></h2>
@@ -104,3 +104,4 @@
         <a href="index.php?page=detail" class="button button-submit">Next</a></div>
     </div>
 </section>
+<?php endforeach;?>
