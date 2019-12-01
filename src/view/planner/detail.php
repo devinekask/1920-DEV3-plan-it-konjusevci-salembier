@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="information-js hidden">Hey dit is een workt en dit de informatie ervan.</div>
+    <div class="information-js hidden"><?php echo $template['info']; ?></div>
     <div class="exercises">
         <ul class="excersise-list">
             <li class="exersise">
