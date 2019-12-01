@@ -77,7 +77,7 @@
       <div class="input__wrapper">
         <span class="subtitle__input2">How much do you weigh?</span>
         <div class="input__wrapper--step2">
-          <input size="3" name="weight" value="65" maxlength="3" class="input__step2">
+          <input size="3" name="weight" value="65" maxlength="3" readonly class="input__step2">
           <p class="input__step2 input__step2--extra">KG</p>
         </div>
         <div class="slider__wrapper">
@@ -87,7 +87,7 @@
       <div class="input__wrapper">
         <span class="subtitle__input2">How tall are you?</span>
         <div class="input__wrapper--step2">
-          <input size="3" name="height" value="170" maxlength="3" class="input__step2">
+          <input size="3" name="height" value="170" maxlength="3" readonly class="input__step2">
           <p class="input__step2 input__step2--extra">CM</p>
         </div>
         <div class="slider__wrapper">
@@ -97,7 +97,7 @@
       <div class="input__wrapper">
         <span class="subtitle__input2">What's your age?</span>
         <div class="input__wrapper--step2">
-          <input size="2" name="age" value="19" maxlength="2" class="input__step2">
+          <input size="2" name="age" value="19" maxlength="2" readonly class="input__step2">
           <p class="input__step2 input__step2--extra">Y/O</p>
         </div>
         <div class="slider__wrapper">
