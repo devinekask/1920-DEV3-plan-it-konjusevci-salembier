@@ -67,7 +67,11 @@
       <div class="input__wrapper">
         <span class="subtitle__input2">How long will this session take?</span>
         <div class="input__wrapper--step2">
-          <input name="time" value="00:30:00" maxlength="8" class="input__step2">
+          <input name="time" value="30" maxlength="3" size="3" readonly class="input__step2">
+          <p class="input__step2 input__step2--extra">Minutes</p>
+        </div>
+        <div class="slider__wrapper">
+          <input type="range" min="1" max="180" value="30" class="slider" id="time">
         </div>
       </div>
       <div class="input__wrapper">
@@ -76,19 +80,28 @@
           <input size="3" name="weight" value="65" maxlength="3" class="input__step2">
           <p class="input__step2 input__step2--extra">KG</p>
         </div>
+        <div class="slider__wrapper">
+          <input type="range" min="30" max="150" value="65" class="slider" id="weight">
+        </div>
       </div>
       <div class="input__wrapper">
         <span class="subtitle__input2">How tall are you?</span>
         <div class="input__wrapper--step2">
-          <input size="4" name="height" value="1,70" maxlength="4" class="input__step2">
-          <p class="input__step2 input__step2--extra">M</p>
+          <input size="3" name="height" value="170" maxlength="3" class="input__step2">
+          <p class="input__step2 input__step2--extra">CM</p>
+        </div>
+        <div class="slider__wrapper">
+          <input type="range" min="100" max="240" value="170" class="slider" id="height">
         </div>
       </div>
       <div class="input__wrapper">
         <span class="subtitle__input2">What's your age?</span>
         <div class="input__wrapper--step2">
-          <input size="3" name="age" value="19" maxlength="3" class="input__step2">
+          <input size="2" name="age" value="19" maxlength="2" class="input__step2">
           <p class="input__step2 input__step2--extra">Y/O</p>
+        </div>
+        <div class="slider__wrapper">
+          <input type="range" min="15" max="75" value="19" class="slider" id="age">
         </div>
       </div>
       <div class="planning__wrapper"><input type="submit" value="Next step" class='button button-submit'></div>
@@ -161,8 +174,9 @@
         </div>
       </div>
       <input type="hidden" name="action" value="insert">
-      <div class="planning__wrapper"><input type="submit" value="Lets get them gainz" class='button button-submit'></div>
+      <div class="planning__wrapper"><input type="submit" value="Lets get them gainz" class='button button-submit'>
       </div>
+    </div>
     </div>
   </section>
 </form>

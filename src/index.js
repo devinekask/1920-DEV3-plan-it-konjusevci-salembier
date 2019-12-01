@@ -5,10 +5,11 @@ require('./style.css');
   let planningArray = [];
 
   const init = () => {
+    /* EVERYTHING ABOUT STEP CHANING/NEXT STEPS VIA JS */
     const $steps = document.querySelectorAll('.step');
     const $doc = document.getElementsByClassName('planning--stap1');
 
-    if ($doc.length !== 0) {
+    if ($doc.length > 0) {
       //Trigger when planning sections are found and when there's a next needed in JS
       planningArray = Array.from(document.querySelectorAll('.planning'));
 
@@ -23,7 +24,20 @@ require('./style.css');
       }
       hideMenus();
     }
+
+    /* EVERYTHING ABOUT SLIDERS ON STEP 2 */
+
+    const $sliders = document.querySelectorAll('.slider');
+    if ($sliders.length > 0) {
+      $sliders.forEach($slider => {
+        $slider.addEventListener('change', handleSliderChangeEvent);
+      });
+    }
+
+    /* EVERYTHING ABOUT DETAILPAGE */
   };
+
+  /* EVERYTHING ABOUT STEP CHANING/NEXT STEPS VIA JS */
 
   const handleButtonClickEvent = e => {
     //First checks if it's the last button before preventing default
@@ -69,6 +83,28 @@ require('./style.css');
     });
   };
 
+  /* EVERYTHING ABOUT SLIDERS ON STEP 2 */
+
+  const handleSliderChangeEvent = e => {
+    changeValues(e.currentTarget);
+  };
+
+  const changeValues = e => {
+    const $inputs = Array.from(document.getElementsByClassName('input__step2'));
+    const inputs = [];
+
+    $inputs.forEach($input => {
+      if ($input.classList[1] === undefined) {
+        inputs.push($input);
+      }
+    });
+
+    inputs.forEach(input => {
+      if (input.name === e.id) {
+        input.value = e.value;
+      }
+    });
+  };
 
   init();
 }

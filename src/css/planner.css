@@ -76,3 +76,28 @@
   width: 22rem;
   font-weight: 500;
 }
+
+.slider__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  margin-top: 1.5rem;
+  appearance: none;
+  width: 20rem;
+  height: 1.5rem;
+  border-radius: .5rem;
+  background: lightgrey;
+  outline: none;
+  opacity: .7;
+  transition: .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--mainColor);
+}
