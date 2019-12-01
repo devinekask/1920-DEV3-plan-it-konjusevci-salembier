@@ -25,6 +25,15 @@ require('./style.css');
       hideMenus();
     }
 
+    /* EVERYTHING ABOUT WORKOUTS ON STEP 1 AND EXERCISES DERIVED FROM WORKOUTS */
+
+    const $workouts = document.querySelectorAll('.workout');
+    if ($workouts.length > 0) {
+      $workouts.forEach($workout => {
+        $workout.addEventListener('click', handleWorkoutClickEvent);
+      });
+    }
+
     /* EVERYTHING ABOUT SLIDERS ON STEP 2 */
 
     const $sliders = document.querySelectorAll('.slider');
@@ -33,17 +42,6 @@ require('./style.css');
         $slider.addEventListener('change', handleSliderChangeEvent);
       });
     }
-
-    /* EVERYTHING ABOUT (NOT) DOS ON STEP 3 */
-
-    const $doing = document.querySelector('.doing__wrapper');
-    if ($doing) {
-      const $doingItems = document.querySelectorAll('.doing');
-      $doingItems.forEach($item => {
-        $item.addEventListener('click', handleItemClickEvent);
-      });
-    }
-
     /* EVERYTHING ABOUT TEMPLATE-DETAILPAGE */
 
     const $infos = document.querySelectorAll('.information-template--workout');
@@ -100,18 +98,44 @@ require('./style.css');
     });
   };
 
-  /* EVERYTHING ABOUT (NOT) DOS ON STEP 3 */
 
-  const handleItemClickEvent = e => {
+  /* EVERYTHING ABOUT WORKOUTS ON STEP 1 AND EXERCISES DERIVED FROM WORKOUTS */
+  const handleWorkoutClickEvent = e => {
+    const $form = document.querySelector('form');
+    const url = `${$form.getAttribute('action')}?page=planner&workout=${e.currentTarget.value}`;
+
+    fetch(url, {
+      headers: new Headers({
+        Accept: 'application/json'
+      })
+    })
+      .then(res => {
+        return res.json();
+      })
+      .then(json => {
+        updateExercises(json);
+        // Do something with the returned data.
+      });
+  };
+
+  const updateExercises = exercises => {
     const $doing = document.querySelector('.doing__wrapper');
     const $notDoing = document.querySelector('.not__doing');
-    if (e.path[1] === $notDoing) {
-      $doing.appendChild(e.currentTarget);
-    }
+    $doing.innerHTML = '';
+    $notDoing.innerHTML = '';
+    exercises.forEach(exercise => {
+      console.log(exercise);
+      const $el = document.createElement('label');
+      $el.classList.add('doing');
+      $el.for = exercise.info;
+      $el.innerHTML = `${exercise.info}<input checked id='${exercise.info}' name='exercises[]' value='${exercise.info}' type="checkbox" class="doing checkbox__button">`;
+      $doing.append($el);
+    });
+    const $doingItems = document.querySelectorAll('.doing');
+    $doingItems.forEach($item => {
+      $item.addEventListener('click', handleItemClickEvent);
+    });
 
-    if (e.path[1] === $doing) {
-      $notDoing.appendChild(e.currentTarget);
-    }
   };
 
   /* EVERYTHING ABOUT SLIDERS ON STEP 2 */
@@ -135,6 +159,20 @@ require('./style.css');
         input.value = e.value;
       }
     });
+  };
+
+  /* EVERYTHING ABOUT (NOT) DOS ON STEP 3 */
+
+  const handleItemClickEvent = e => {
+    const $doing = document.querySelector('.doing__wrapper');
+    const $notDoing = document.querySelector('.not__doing');
+    if (e.path[1] === $notDoing) {
+      $doing.appendChild(e.currentTarget);
+    }
+
+    if (e.path[1] === $doing) {
+      $notDoing.appendChild(e.currentTarget);
+    }
   };
 
   /* EVERYTHING ABOUT TEMPLATE-DETAILPAGE */
