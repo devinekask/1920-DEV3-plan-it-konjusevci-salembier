@@ -36,9 +36,11 @@ require('./style.css');
 
     /* EVERYTHING ABOUT TEMPLATE-DETAILPAGE */
 
-    const $info = document.querySelector('.information-template--workout');
-    if ($info) {
-      $info.addEventListener('click', handleInfoClickEvent);
+    const $infos = document.querySelectorAll('.information-template--workout');
+    if ($infos.length > 0) {
+      $infos.forEach($info => {
+        $info.addEventListener('click', handleInfoClickEvent);
+      });
     }
   };
 
@@ -114,8 +116,10 @@ require('./style.css');
   /* EVERYTHING ABOUT TEMPLATE-DETAILPAGE */
 
   const handleInfoClickEvent = () => {
-    const $info = document.querySelector('.information-js');
-    $info.classList.toggle('hidden');
+    const $infos = document.querySelectorAll('.information-js');
+    $infos.forEach($info => {
+      $info.classList.toggle('hidden');
+    });
   };
 
   init();
