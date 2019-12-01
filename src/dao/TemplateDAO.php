@@ -31,7 +31,7 @@ public function selectExcerciseById($id){
   $stmt = $this->pdo->prepare($sql);
   $stmt->bindValue(':id', $id);
   $stmt->execute();
-  return $stmt->fetch(PDO::FETCH_ASSOC);
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 }
 ?>
