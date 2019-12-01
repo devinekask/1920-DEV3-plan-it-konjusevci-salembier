@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/Controller.php';
 require_once __DIR__ . '/../dao/PlannerDAO.php';
+require_once __DIR__ . '/../dao/TemplateDAO.php';
 
 class PlannerController extends Controller {
 
@@ -9,6 +10,7 @@ class PlannerController extends Controller {
 
   function __construct() {
     $this->plannerDAO = new PlannerDAO();
+    $this->templateDAO = new TemplateDAO();
   }
 
   public function index() {
@@ -28,7 +30,7 @@ class PlannerController extends Controller {
         exit();
       }
     }
-
+    $this->set('templateworkouts', $this->templateDAO->selectAllTemplateWorkouts());
     $this->set('workouts', $this->plannerDAO->selectAllWorkouts());
 
     /*if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {

@@ -62,8 +62,9 @@
 <section class="templateplan">
     <h2>Template plan</h2>
     <ul>
-        <li class="plan plan--template"><a class="templateplan__link" href="index.php?page=detail">Bodybuilding</a></li>
-        <li class="plan plan--template"><a class="templateplan__link" href="index.php?page=detail">Bodybuilding</a></li>
-        <li class="plan plan--template"><a class="templateplan__link" href="index.php?page=detail">Bodybuilding</a></li>
+    <li class="template"><img class="template__img" src="../assets/img/bodymass.png" alt=""><a class="templateplan__link" href="index.php?page=detail">
+Bodybuilding</a></li>
+      <?php foreach($templateworkouts as $templateworkout): ?>
+      <?php endforeach;?>
     </ul>
 </section>

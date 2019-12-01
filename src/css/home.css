@@ -72,3 +72,29 @@
   width: 95%;
   background-image: url(../assets/img/Rectangle7.png);
 }
+
+.template__img {
+  position: absolute;
+  margin-top: -1rem;
+}
+
+.templateplan__link {
+  z-index: 1;
+  height: 8rem;
+  width: 38rem;
+  margin-top: -2rem;
+  padding-top: 5rem;
+  padding-left: 2rem;
+}
+
+.template {
+  padding-top: 2rem;
+  margin: 0 auto;
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
