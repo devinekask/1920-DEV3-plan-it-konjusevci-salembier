@@ -81,12 +81,13 @@ p {
 
 .header__top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 h1 {
   font-weight: var(--boldWeight);
   padding-bottom: 3rem;
+  align-self: center;
 }
 
 h2 {
@@ -99,10 +100,6 @@ h2 {
 
 .subtitle--white {
   color: white;
-}
-
-.null {
-  opacity: 0;
 }
 
 .header__bot {

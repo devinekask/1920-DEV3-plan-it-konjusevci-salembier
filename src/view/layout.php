@@ -14,14 +14,8 @@
 <body>
   <header class="header">
     <div class="header__top">
-      <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="38" height="4" rx="2" fill="white" />
-        <rect y="10" width="38" height="4" rx="2" fill="white" />
-        <rect y="20" width="38" height="4" rx="2" fill="white" />
-      </svg>
       <h1>
         <?php echo $title; ?></h1>
-      <p class="null">null</p>
     </div>
     <div class="header__bot">
       <div class="header__info">
@@ -62,6 +56,7 @@
         Home </a>
     </div>
     <div class="footer__item">
+      <a class="planning__wrapper" href="index.php?page=planner">
       <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M33.4167 6.83334H9.50001C7.61304 6.83334 6.08334 8.36304 6.08334 10.25V34.1667C6.08334 36.0537 7.61304 37.5833 9.50001 37.5833H33.4167C35.3036 37.5833 36.8333 36.0537 36.8333 34.1667V10.25C36.8333 8.36304 35.3036 6.83334 33.4167 6.83334Z"
@@ -73,8 +68,8 @@
         <path d="M6.08334 17.0833H36.8333" stroke="#C1BFBF" stroke-width="2" stroke-linecap="round"
           stroke-linejoin="round" />
       </svg>
-      <p class="footer__text">Planner</p>
-    </div>
+      <p class="footer__text"> Add a planner</p>
+    </div></a>
     <div class="footer__item">
       <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

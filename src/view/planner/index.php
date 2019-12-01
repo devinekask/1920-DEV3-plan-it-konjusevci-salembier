@@ -61,7 +61,7 @@
 </section>
 <section class="templateplan">
     <h2>Template plan</h2>
-    <ul class="planning__wrapper">
+    <ul class="planning__wrapper template__wrapper">
       <?php foreach($templateworkouts as $templateworkout): ?>
         <li class="template"><img class="template__img" src="<?php echo $templateworkout['picturemobile']; ?>" alt="<?php echo $templateworkout['title']; ?>"><a class="templateplan__link" href="index.php?page=detailTemplate&id=<?php echo $templateworkout['id'];?>">
         <?php echo $templateworkout['title']; ?></a></li>
