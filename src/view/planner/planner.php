@@ -3,11 +3,10 @@
     <div class="planning__wrapper">
       <ul class="steps">
         <li class="step step--active"><a class="step__link step__link--active"
-            data-planner-class="planning planning--stap1" href="index.php?page=planner">1</a></li>
-        <li class="step"><a class="step__link" data-planner-class="planning planning--stap2"
-            href="index.php?page=plannerstep2">2</a></li>
-        <li class="step"><a class="step__link" data-planner-class="planning planning--stap3"
-            href="index.php?page=plannerstep3">3</a></li>
+            data-planner-class="planning planning--stap1" href="">1</a></li>
+        <li class="step"><a class="step__link" data-planner-class="planning planning--stap2" href="">2</a></li>
+        <li class="step"><a class="step__link" data-planner-class="planning planning--stap3" href="">3</a></li>
+        <li class="step"><a class="step__link" data-planner-class="planning planning--stap4" href="">4</a></li>
       </ul>
       <h2 class='hidden'>Planning</h2>
       <div class="input__wrapper">
@@ -58,11 +57,11 @@
     <div class="planning__wrapper">
       <ul class="steps">
         <li class="step step--active"><a class="step__link step__link--active"
-            data-planner-class="planning planning--stap1" href="index.php?page=planner">1</a></li>
+            data-planner-class="planning planning--stap1" href="">1</a></li>
         <li class="step step--active"><a class="step__link step__link--active"
-            data-planner-class="planning planning--stap2" href="index.php?page=plannerstep2">2</a></li>
-        <li class="step"><a class="step__link" data-planner-class="planning planning--stap3"
-            href="index.php?page=plannerstep3">3</a></li>
+            data-planner-class="planning planning--stap2" href="">2</a></li>
+        <li class="step"><a class="step__link" data-planner-class="planning planning--stap3" href="">3</a></li>
+        <li class="step"><a class="step__link" data-planner-class="planning planning--stap4" href="">4</a></li>
       </ul>
       <h2 class='hidden'>Planning</h2>
       <div class="input__wrapper">
@@ -101,11 +100,12 @@
     <div class="planning__wrapper exercise">
       <ul class="steps">
         <li class="step step--active"><a class="step__link step__link--active"
-            data-planner-class="planning planning--stap1" href="index.php?page=planner">1</a></li>
+            data-planner-class="planning planning--stap1" href="">1</a></li>
         <li class="step step--active"><a class="step__link step__link--active"
-            data-planner-class="planning planning--stap2" href="index.php?page=plannerstep2">2</a></li>
+            data-planner-class="planning planning--stap2" href="">2</a></li>
         <li class="step step--active"><a class="step__link step__link--active"
-            data-planner-class="planning planning--stap3" href="index.php?page=plannerstep3">3</a></li>
+            data-planner-class="planning planning--stap3" href="">3</a></li>
+        <li class="step"><a class="step__link" data-planner-class="planning planning--stap4" href="">4</a></li>
       </ul>
       <h2 class="planner__title">LIST OF EXERCISES</h2>
       <div class="exercises__wrapper">
@@ -133,19 +133,36 @@
         </div>
       </div>
     </div>
-    <div class="input__wrapper sporty__wrapper">
-      <span class="difficulty">CHOOSE YOUR DIFFICULTY</span>
-      <div class="radio__wrapper">
-        <input type="radio" name="sporty" value="easy" id="easy">
-        <label class="radio__button" for="easy">easy</label>
-        <input type="radio" name="sporty" value="intermediate" id="intermediate">
-        <label class="radio__button" for="intermediate">intermediate</label>
-        <input type="radio" name="sporty" value="hard" id="hard">
-        <label class="radio__button" for="hard">hard</label>
-      </div>
+    <div class="planning__wrapper"><input type="submit" value="Next step" class='button button-submit'></div>
     </div>
-    <input type="hidden" name="action" value="insert">
-    <div class="planning__wrapper"><input type="submit" value="Lets get them gainz" class='button button-submit'></div>
+  </section>
+
+  <section class="planning planning--stap4">
+    <div class="planning__wrapper">
+      <ul class="steps">
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap1" href="">1</a></li>
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap2" href="">2</a></li>
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap3" href="">3</a></li>
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap4" href="">4</a></li>
+      </ul>
+      <div class="input__wrapper sporty__wrapper">
+        <span class="difficulty">CHOOSE YOUR DIFFICULTY</span>
+        <div class="radio__wrapper">
+          <input type="radio" name="sporty" value="easy" id="easy">
+          <label class="radio__button" for="easy">easy</label>
+          <input type="radio" name="sporty" value="intermediate" id="intermediate">
+          <label class="radio__button" for="intermediate">intermediate</label>
+          <input type="radio" name="sporty" value="hard" id="hard">
+          <label class="radio__button" for="hard">hard</label>
+        </div>
+      </div>
+      <input type="hidden" name="action" value="insert">
+      <div class="planning__wrapper"><input type="submit" value="Lets get them gainz" class='button button-submit'></div>
+      </div>
     </div>
   </section>
 </form>

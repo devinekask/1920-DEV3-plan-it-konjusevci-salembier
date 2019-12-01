@@ -1,6 +1,7 @@
 .steps {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 36rem;
 
   & .step {
     border: 1px solid #afafaf;
@@ -15,15 +16,6 @@
       justify-content: center;
     }
   }
-
-  & .step:first-child {
-    margin-right: 7rem;
-  }
-
-  & .step:last-child {
-    margin-left: 7rem;
-  }
-
   & .step--active {
     border: 1px solid black;
 
