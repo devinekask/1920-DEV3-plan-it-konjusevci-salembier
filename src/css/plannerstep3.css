@@ -64,6 +64,7 @@
     }
 
     & .doing {
+      text-align: center;
       text-transform: uppercase;
       font-size: var(--smallerSize);
       background: #92befb;
