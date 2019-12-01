@@ -71,7 +71,7 @@
           <p class="input__step2 input__step2--extra">Minutes</p>
         </div>
         <div class="slider__wrapper">
-          <input type="range" min="1" max="180" value="30" class="slider" id="time">
+          <input type="range" min="15" max="180" value="30" class="slider" id="time">
         </div>
       </div>
       <div class="input__wrapper">
@@ -165,7 +165,7 @@
       <div class="input__wrapper sporty__wrapper">
         <span class="difficulty">CHOOSE YOUR DIFFICULTY</span>
         <div class="radio__wrapper">
-          <input type="radio" name="sporty" value="easy" id="easy">
+          <input type="radio" name="sporty" value="easy" id="easy" checked>
           <label class="radio__button" for="easy">easy</label>
           <input type="radio" name="sporty" value="intermediate" id="intermediate">
           <label class="radio__button" for="intermediate">intermediate</label>
