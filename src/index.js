@@ -34,7 +34,12 @@ require('./style.css');
       });
     }
 
-    /* EVERYTHING ABOUT DETAILPAGE */
+    /* EVERYTHING ABOUT TEMPLATE-DETAILPAGE */
+
+    const $info = document.querySelector('.information-template--workout');
+    if ($info) {
+      $info.addEventListener('click', handleInfoClickEvent);
+    }
   };
 
   /* EVERYTHING ABOUT STEP CHANING/NEXT STEPS VIA JS */
@@ -104,6 +109,13 @@ require('./style.css');
         input.value = e.value;
       }
     });
+  };
+
+  /* EVERYTHING ABOUT TEMPLATE-DETAILPAGE */
+
+  const handleInfoClickEvent = () => {
+    const $info = document.querySelector('.information-js');
+    $info.classList.toggle('hidden');
   };
 
   init();
