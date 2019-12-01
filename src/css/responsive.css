@@ -1,0 +1,32 @@
+@media (--small-screen) {
+
+  .header {
+    width: 42rem;
+  }
+
+  .footer {
+    width: 42rem;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .planning {
+    width: 38rem;
+  }
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (--big-screen) {
+
+  .footer {
+    position: relative;
+  }
+
+  
+}

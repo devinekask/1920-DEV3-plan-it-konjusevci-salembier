@@ -16,5 +16,5 @@
   --smallerSize: 1.7rem;
 }
 
-@custom-media --big-screen (width >= 1024px);
-@custom-media --small-screen (width <= 320px);
+@custom-media --big-screen (width >= 850px);
+@custom-media --small-screen (width <= 420px);
