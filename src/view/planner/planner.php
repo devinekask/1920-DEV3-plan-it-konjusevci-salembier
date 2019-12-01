@@ -12,22 +12,10 @@
       <div class="input__wrapper">
         <span>Kies een workout</span>
         <div class="checkbox__wrapper">
-          <input id="legday" name="workouts[]" value="leg day" type="checkbox" class="checkbox__button">
-          <label for='legday'>Leg day</label>
-          <input id="cardio" name="workouts[]" value="cardio" type="checkbox" class="checkbox__button">
-          <label for='cardio'>Cardio</label>
-          <input id="bench" name="workouts[]" value="bench" type="checkbox" class="checkbox__button">
-          <label for='bench'>Bench</label>
-          <input id="swole" name="workouts[]" value="swole" type="checkbox" class="checkbox__button">
-          <label for='swole'>swole</label>
-          <input id="bulking" name="workouts[]" value="bulking" type="checkbox" class="checkbox__button">
-          <label for='bulking'>bulking</label>
-          <input id="form" name="workouts[]" value="form" type="checkbox" class="checkbox__button">
-          <label for='form'>form</label>
-          <input id="plank" name="workouts[]" value="plank" type="checkbox" class="checkbox__button">
-          <label for='plank'>plank</label>
-          <input id="plateau" name="workouts[]" value="plateau" type="checkbox" class="checkbox__button">
-          <label for='plateau'>plateau</label>
+          <?php foreach($workouts as $workout): ?>
+          <input id="<?php echo $workout['title']; ?>" name="workouts" value="<?php echo $workout['id']; ?>" type="radio" class="checkbox__button workout">
+          <label for='<?php echo $workout['title']; ?>'><?php echo $workout['title']; ?></label>
+          <?php endforeach; ?>
         </div>
       </div>
       <div class="input__wrapper">

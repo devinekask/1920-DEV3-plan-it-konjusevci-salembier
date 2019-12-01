@@ -33,14 +33,20 @@ class PlannerController extends Controller {
     $this->set('templateworkouts', $this->templateDAO->selectAllTemplateWorkouts());
     $this->set('workouts', $this->plannerDAO->selectAllWorkouts());
 
-    /*if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
-      header('Content-Type: application/json');
-      echo json_encode($workouts);
-      exit();
-    }*/
+
   }
 
   public function planner() {
+      if(!empty($_GET['workout'])){
+        $exercises = $this->templateDAO->selectExcerciseById($_GET['workout']);
+      }
+      
+      if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
+      echo json_encode($exercises);
+      exit();
+    }
+
+    $this->set('workouts', $this->templateDAO->selectAllTemplateWorkouts());
     $this->set('title', 'Maak een plan');
   }
   public function detailTemplate() {

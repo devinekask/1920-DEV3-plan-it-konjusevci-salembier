@@ -26,7 +26,7 @@ public function selectWorkoutById($id){
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-public function selectExcerciseById($id){
+public function selectExcerciseById($id=1){
   $sql = "SELECT * FROM `exercises` WHERE `workout_id` = :id";
   $stmt = $this->pdo->prepare($sql);
   $stmt->bindValue(':id', $id);
