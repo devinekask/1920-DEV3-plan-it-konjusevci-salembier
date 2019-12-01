@@ -35,8 +35,10 @@
   <main>
     <?php
         if(!empty($_SESSION['error'])) {
-          echo '<div class="error box">' . $_SESSION['error'] . '</div>';
+          foreach($_SESSION['error'] as $error){
+          echo '<div class="error box">' . $error . '</div>';
         }
+      }
         if(!empty($_SESSION['info'])) {
           echo '<div class="info box">' . $_SESSION['info'] . '</div>';
         }

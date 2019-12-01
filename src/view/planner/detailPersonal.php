@@ -1,7 +1,7 @@
 <section class='planning planning--stap1'>
         <div class="information__wrapper">
             <h2><?php echo $workout['workouts'] ?></h2>
-            <div class="template">
+            <div class="templates">
                 <div class="template__wrapper">
                     <div class="template--diffuclty">
                         <span>Diffuclty</span>
@@ -44,19 +44,6 @@ foreach($excersises as $excersise): ?>
 <section class="planning planning--detail">
     <div class="information__wrapper">
         <h2><?php echo $workout['workouts'] ?></h2>
-        <div class="personal__workout hidden">
-            <div class="personal">
-                <div class="personal__days">
-                    <p>days completed <br> <span class="personal__numbers days">1 / 3</span></p>
-                </div>
-            </div>
-            <div class="time">
-                <div class="personal-time">
-                    <br>
-                    <p>time <span class="personal__time"><?php $workout['time'] ?> minuten</span></p>
-                </div>
-            </div>
-        </div>
         <div class="templates">
             <div class="template__wrapper">
                 <div class="template--diffuclty">

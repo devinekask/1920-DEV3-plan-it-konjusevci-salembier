@@ -27,8 +27,8 @@ class PlannerDAO extends DAO {
   }
 
   public function insertWorkout($data) {
-    //$errors = $this->validate( $data );
-    if (true) {
+    $errors = $this->validate( $data );
+    if (empty($errors)) {
       $sql = "INSERT INTO `personal_workouts` (`days`, `workouts`, `exercises_id`, `time`, `weight`, `height`, `age`, `sporty`) 
       VALUES (:days, :workouts, :exercises_id, :time, :weight, :height, :age, :sporty)";
       $stmt = $this->pdo->prepare($sql);
@@ -44,22 +44,35 @@ class PlannerDAO extends DAO {
         return true;
       }
     }
+    $_SESSION['errors'] = $errors;
     return false;
   }
 
   public function validate( $data ){
     $errors = [];
-    if (!isset($data['created'])) {
-      $errors['created'] = 'Gelieve created in te vullen';
+    if (empty($data['days'])) {
+      $errors['days'] = 'Gelieve minstens 1 dag aan te duiden';
     }
-    if (!isset($data['modified'])) {
-      $errors['modified'] = 'Gelieve modified in te vullen';
+    if (empty($data['workouts'])) {
+      $errors['workouts'] = 'Gelieve een workout aan te duiden';
     }
-    if (!isset($data['checked'])) {
-      $errors['checked'] = 'Gelieve checked in te vullen';
+    if (empty($data['exercises_id'])) {
+      $errors['exercises_id'] = 'Gelieve minstens 1 oefening te doen';
     }
-    if (empty($data['text']) ){
-      $errors['text'] = 'Gelieve een text in te vullen';
+    if (empty($data['time']) ){
+      $errors['time'] = 'Gelieve een tijd mee te geven';
+    }
+    if (empty($data['weight']) ){
+      $errors['weight'] = 'Gelieve uw gewicht mee te geven';
+    }
+    if (empty($data['height']) ){
+      $errors['height'] = 'Gelieve uw lengte mee te geven';
+    }
+    if (empty($data['age']) ){
+      $errors['age'] = 'Gelieve uw leeftijd mee te geven';
+    }
+    if (empty($data['sporty']) ){
+      $errors['sporty'] = 'Gelieve uw bekwaamheid mee te geven';
     }
     return $errors;
   }
