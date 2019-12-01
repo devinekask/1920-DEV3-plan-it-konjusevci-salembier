@@ -96,9 +96,6 @@
 
   & .difficulty {
     margin-left: 2rem;
-  }
-
-  & span {
     font-size: var(--smallerSize);
     display: flex;
     justify-content: center;

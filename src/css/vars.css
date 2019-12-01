@@ -15,3 +15,6 @@
   --averageSize: 2.2rem;
   --smallerSize: 1.7rem;
 }
+
+@custom-media --big-screen (width >= 1024px);
+@custom-media --small-screen (width <= 320px);
