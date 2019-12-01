@@ -1,6 +1,6 @@
 <section class='planning planning--stap1'>
     <div class="information__wrapper">
-        <h2>Title of workout</h2>
+        <h2><?php echo $workout['title'] ?></h2>
         <div class="personal__workout hidden">
             <div class="personal">
                 <div class="personal__days">

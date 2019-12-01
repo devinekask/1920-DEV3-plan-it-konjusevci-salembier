@@ -44,6 +44,19 @@ class PlannerController extends Controller {
     $this->set('title', 'Maak een plan');
   }
   public function detail() {
+    if(!empty($_GET['id'])){
+      $template = $this->templateDAO->selectById($_GET['id']);
+      $excersises = $this->templateDAO->selectExcerciseById($_GET['id']);
+      $workout = $this->templateDAO->selectWorkoutById($_GET['id']);
+    }
+    if (empty($template)){
+      $_SESSION['error'] = 'De workout werd niet gevonden';
+      header('Location:index.php');
+      exit();
+    }
+    $this->set('workout', $workout);
+    $this->set('excersises', $excersises);
+    $this->set('template', $template);
     $this->set('title', 'Work it out');
   }
 
