@@ -43,7 +43,8 @@
             <li class="exersise">
                 <img class="exercise-img" src="<?php echo $excersise['icon'] ?>" alt="<?php echo $excersise['info'] ?>">
                 <p class="exercise-name"><?php echo $excersise['info'] ?></p>
-                <p class="exercise-amount">x10</p>
+          <p class="exercise-amount"><?php if($template['sportief'] == 'Beginner') { ?> x10<?php }?>
+          <?php if($template['sportief'] == 'Gemiddeld') { ?> x15<?php } if($template['sportief'] == 'Expert')  {?>x20 <?php }?> </p>
             </li>
           <?php endforeach;?>
         </ul>
@@ -97,8 +98,9 @@
     </div>
     <div class="planning__wrapper">
         <img class="excerscie-img" src="<?php echo $excersise['iconbig'] ?>" alt="plank" width="186">
-        <span class="excersice-name">Excersice name</span>
-        <span class="excersice-todo">x10</span>
+        <span class="excersice-name"><?php echo $excersise['info']?></span>
+        <span class="excersice-todo"><?php if($template['sportief'] == 'Beginner') { ?> x10<?php }?>
+          <?php if($template['sportief'] == 'Gemiddeld') { ?> x15<?php } if($template['sportief'] == 'Expert')  {?>x20 <?php }?></span>
         <a href="index.php?page=detail" class="button button-submit">Next</a></div>
     </div>
 </section>
