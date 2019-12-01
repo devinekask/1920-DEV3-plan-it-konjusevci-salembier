@@ -1,7 +1,7 @@
 <section class='planning planning--stap1'>
     <div class="information__wrapper">
         <h2><?php echo $workout['title'] ?></h2>
-        <div class="template">
+        <div class="templates">
             <div class="template__wrapper">
                 <p class="information-template--workout">?</p>
                 <div class="template--diffuclty">
@@ -39,7 +39,7 @@
             <a href="index.php?page=detail&id=<?php echo $workout['id'];?>?" class="button button-submit">Begin</a></div>
     </div>
 </section>
-<?php 
+<?php
 $counter = 1;
 foreach($excersises as $excersise): ?>
 <section class="planning planning--stap2">
@@ -58,7 +58,7 @@ foreach($excersises as $excersise): ?>
                 </div>
             </div>
         </div>
-        <div class="template">
+        <div class="templates">
             <div class="template__wrapper">
                 <p class="information-template--workout">?</p>
                 <div class="template--diffuclty">
