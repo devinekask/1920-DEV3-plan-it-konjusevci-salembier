@@ -34,6 +34,16 @@ require('./style.css');
       });
     }
 
+    /* EVERYTHING ABOUT (NOT) DOS ON STEP 3 */
+
+    const $doing = document.querySelector('.doing__wrapper');
+    if ($doing) {
+      const $doingItems = document.querySelectorAll('.doing');
+      $doingItems.forEach($item => {
+        $item.addEventListener('click', handleItemClickEvent);
+      });
+    }
+
     /* EVERYTHING ABOUT TEMPLATE-DETAILPAGE */
 
     const $infos = document.querySelectorAll('.information-template--workout');
@@ -88,6 +98,20 @@ require('./style.css');
         $section.style.display = 'none';
       }
     });
+  };
+
+  /* EVERYTHING ABOUT (NOT) DOS ON STEP 3 */
+
+  const handleItemClickEvent = e => {
+    const $doing = document.querySelector('.doing__wrapper');
+    const $notDoing = document.querySelector('.not__doing');
+    if (e.path[1] === $notDoing) {
+      $doing.appendChild(e.currentTarget);
+    }
+
+    if (e.path[1] === $doing) {
+      $notDoing.appendChild(e.currentTarget);
+    }
   };
 
   /* EVERYTHING ABOUT SLIDERS ON STEP 2 */

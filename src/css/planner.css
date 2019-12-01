@@ -29,11 +29,11 @@
   margin-top: 3rem;
 
   & span {
-    margin-left: 1rem;
+    margin-left: 2rem;
     color: black;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: var(--averageSize);
+    font-size: var(--smallerSize);
   }
 
   & .checkbox__wrapper {

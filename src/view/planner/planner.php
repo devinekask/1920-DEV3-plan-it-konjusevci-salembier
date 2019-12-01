@@ -122,27 +122,39 @@
       </ul>
       <h2 class="planner__title">lijst van oefeningen</h2>
       <div class="exercises__wrapper">
-        <div class="input__wrapper doing__wrapper">
+        <div class="input__wrapper">
           <span>wil ik doen</span>
-          <input checked id='running' type="checkbox" class="checkbox__button">
-          <label class="doing" for="running">running</label>
-          <input checked id='cardio1' type="checkbox" class="checkbox__button">
-          <label class="doing" for="cardio1">cardio</label>
-          <input checked id='swimming' type="checkbox" class="checkbox__button">
-          <label class="doing" for="swimming">swimming</label>
-          <input checked id='walking' type="checkbox" class="checkbox__button">
-          <label class="doing" for="walking">walking</label>
+          <div class="doing__wrapper">
+            <label class="doing" for="running"> running
+              <input checked id='running' type="checkbox" class="doing checkbox__button">
+            </label>
+            <label class="doing" for="cardio1">cardio
+              <input checked id='cardio1' type="checkbox" class="doing checkbox__button">
+            </label>
+            <label class="doing" for="swimming">swimming
+              <input checked id='swimming' type="checkbox" class="doing checkbox__button">
+            </label>
+            <label class="doing" for="walking">walking
+              <input checked id='walking' type="checkbox" class="doing checkbox__button">
+            </label>
+          </div>
         </div>
-        <div class="input__wrapper not__doing">
+        <div class="input__wrapper">
           <span class="notdoing">Doe ik niet</span>
-          <input id='biking' type="checkbox" class="checkbox__button">
-          <label for="biking">biking</label>
-          <input id='hardrunning' type="checkbox" class="checkbox__button">
-          <label for="hardrunning">hardrunning</label>
-          <input id='paddeling' type="checkbox" class="checkbox__button">
-          <label for="paddeling">paddeling</label>
-          <input id='surfing' type="checkbox" class="checkbox__button">
-          <label for="surfing">surfing</label>
+          <div class="not__doing">
+            <label for="biking" class="doing">biking
+              <input id='biking' type="checkbox" class="doing checkbox__button">
+            </label>
+            <label for="hardrunning" class="doing">hardrunning
+              <input id='hardrunning' type="checkbox" class="doing checkbox__button">
+            </label>
+            <label for="paddeling" class="doing">paddeling
+              <input id='paddeling' type="checkbox" class="doing checkbox__button">
+            </label>
+            <label for="surfing" class="doing">surfing
+              <input id='surfing' type="checkbox" class="doing checkbox__button">
+            </label>
+          </div>
         </div>
       </div>
     </div>
