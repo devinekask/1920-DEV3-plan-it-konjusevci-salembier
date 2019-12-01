@@ -28,5 +28,9 @@
     position: relative;
   }
 
-  
+  .template__wrapper {
+    display: flex;
+    justify-content: left;
+    flex-flow: wrap row;
+  }
 }
