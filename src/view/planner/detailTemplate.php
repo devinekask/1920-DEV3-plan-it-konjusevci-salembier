@@ -1,19 +1,6 @@
 <section class='planning planning--stap1'>
     <div class="information__wrapper">
         <h2><?php echo $workout['title'] ?></h2>
-        <div class="personal__workout hidden">
-            <div class="personal">
-                <div class="personal__days">
-                    <p>days completed <br> <span class="personal__numbers days">1 / 3</span></p>
-                </div>
-            </div>
-            <div class="time">
-                <div class="personal-time">
-                    <br>
-                    <p>time <span class="personal__time">30mins</span></p>
-                </div>
-            </div>
-        </div>
         <div class="template">
             <div class="template__wrapper">
                 <p class="information-template--workout">?</p>
@@ -52,7 +39,9 @@
             <a href="index.php?page=detail&id=<?php echo $workout['id'];?>?" class="button button-submit">Begin</a></div>
     </div>
 </section>
-<?php foreach($excersises as $excersise): ?>
+<?php 
+$counter = 1;
+foreach($excersises as $excersise): ?>
 <section class="planning planning--stap2">
     <div class="information__wrapper">
         <h2><?php echo $workout['title'] ?></h2>
@@ -93,7 +82,7 @@
     </div>
     <div class="information-js hidden"><?php echo $template['info']; ?></div>
     <div class="extended__information">
-        <span class="excersices-left">1/10</span>
+        <span class="excersices-left"><?php echo $counter; ?>/<?php echo count($excersises) ?></span>
         <a class="exit" href="index.php">+</a>
     </div>
     <div class="planning__wrapper">
@@ -104,4 +93,6 @@
         <a href="index.php?page=detail" class="button button-submit">Next</a></div>
     </div>
 </section>
-<?php endforeach;?>
+<?php
+$counter++;
+ endforeach;?>
