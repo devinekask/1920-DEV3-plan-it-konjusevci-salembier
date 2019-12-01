@@ -42,7 +42,7 @@
 <?php
 $counter = 1;
 foreach($excersises as $excersise): ?>
-<section class="planning planning--stap2">
+<section class="planning planning--detail">
     <div class="information__wrapper">
         <h2><?php echo $workout['title'] ?></h2>
         <div class="personal__workout hidden">
@@ -90,7 +90,7 @@ foreach($excersises as $excersise): ?>
         <span class="excersice-name"><?php echo $excersise['info']?></span>
         <span class="excersice-todo"><?php if($template['sportief'] == 'Beginner') { ?> x10<?php }?>
           <?php if($template['sportief'] == 'Gemiddeld') { ?> x15<?php } if($template['sportief'] == 'Expert')  {?>x20 <?php }?></span>
-        <a href="index.php?page=detail" class="button button-submit">Next</a></div>
+        <a href="index.php?page=detail" class="button button-submit button--detail"><?php if($excersises[count($excersises)-1] == $excersise){ echo 'Finish'; }else{ echo 'Next'; } ?></a></div>
     </div>
 </section>
 <?php
