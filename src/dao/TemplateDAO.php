@@ -33,5 +33,13 @@ public function selectExcerciseById($id=1){
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+public function selectAllExcerciseByIds($ids=1){
+  $sql = "SELECT * FROM `exercises` WHERE `id` IN ($ids)";
+  $stmt = $this->pdo->prepare($sql);
+  $stmt->bindValue(':id', $ids);
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 }
 ?>

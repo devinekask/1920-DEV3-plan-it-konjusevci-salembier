@@ -13,7 +13,7 @@
         <span>Kies een workout</span>
         <div class="checkbox__wrapper">
           <?php foreach($workouts as $workout): ?>
-          <input id="<?php echo $workout['title']; ?>" name="workouts" value="<?php echo $workout['id']; ?>" type="radio" class="checkbox__button workout">
+          <input id="<?php echo $workout['title']; ?>" name="workouts" data-id="<?php echo $workout['id']; ?>" value="<?php echo $workout['title']; ?>" type="radio" class="checkbox__button workout">
           <label for='<?php echo $workout['title']; ?>'><?php echo $workout['title']; ?></label>
           <?php endforeach; ?>
         </div>

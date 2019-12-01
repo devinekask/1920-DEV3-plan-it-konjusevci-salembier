@@ -40,7 +40,7 @@ class PlannerController extends Controller {
       if(!empty($_GET['workout'])){
         $exercises = $this->templateDAO->selectExcerciseById($_GET['workout']);
       }
-      
+
       if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
       echo json_encode($exercises);
       exit();
@@ -67,6 +67,16 @@ class PlannerController extends Controller {
   }
 
   public function detailPersonal() {
+    if(isset($_GET['id'])){
+      if(!empty($_GET['id'])){
+        $workout = $this->plannerDAO->selectWorkoutById($_GET['id']);
+        $this->set('workout', $workout);
+        $this->set('excersises',$this->templateDAO->selectAllExcerciseByIds($workout['exercises_id']));
+      }else{
+      header('Location:index.php');
+      exit();
+      }
+    }
     $this->set('title', 'Work it out');
   }
 

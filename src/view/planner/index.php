@@ -9,7 +9,7 @@
             <a href="index.php?page=detailPersonal&id=<?php echo $workout['id'] ?>">
                 <li class="plan plan--personal">
                     <div class="personalplan__wrapper">
-                        <p class="personalplan__name"><?php echo implode(', ',explode(',',$workout['workouts'])); ?></p>
+                        <p class="personalplan__name"><?php echo $workout['workouts']; ?></p>
                         <form action="index.php" method="POST" class="personalplan__edit">
                             <input type="hidden" name="action" value="delete">
                             <input type="hidden" name="id" value="<?php echo $workout['id']; ?>">

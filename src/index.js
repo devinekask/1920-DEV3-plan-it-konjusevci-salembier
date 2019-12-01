@@ -102,8 +102,7 @@ require('./style.css');
   /* EVERYTHING ABOUT WORKOUTS ON STEP 1 AND EXERCISES DERIVED FROM WORKOUTS */
   const handleWorkoutClickEvent = e => {
     const $form = document.querySelector('form');
-    const url = `${$form.getAttribute('action')}?page=planner&workout=${e.currentTarget.value}`;
-
+    const url = `${$form.getAttribute('action')}?page=planner&workout=${e.currentTarget.dataset.id}`;
     fetch(url, {
       headers: new Headers({
         Accept: 'application/json'
@@ -128,7 +127,7 @@ require('./style.css');
       const $el = document.createElement('label');
       $el.classList.add('doing');
       $el.for = exercise.info;
-      $el.innerHTML = `${exercise.info}<input checked id='${exercise.info}' name='exercises[]' value='${exercise.info}' type="checkbox" class="doing checkbox__button">`;
+      $el.innerHTML = `${exercise.info}<input checked id='${exercise.info}' name="exercises_id[]" value="${exercise.id}" type="checkbox" class="doing checkbox__button">`;
       $doing.append($el);
     });
     const $doingItems = document.querySelectorAll('.doing');
