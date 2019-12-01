@@ -11,7 +11,7 @@ public function selectAllTemplateWorkouts() {
 }
 
 public function selectById($id){
-  $sql = "SELECT * FROM `workout__details` WHERE `workout__id` = :id";
+  $sql = "SELECT * FROM `workout_details` WHERE `workout_id` = :id";
   $stmt = $this->pdo->prepare($sql);
   $stmt->bindValue(':id', $id);
   $stmt->execute();
@@ -27,7 +27,7 @@ public function selectWorkoutById($id){
 }
 
 public function selectExcerciseById($id){
-  $sql = "SELECT * FROM `exercises` WHERE `workout__id` = :id";
+  $sql = "SELECT * FROM `exercises` WHERE `workout_id` = :id";
   $stmt = $this->pdo->prepare($sql);
   $stmt->bindValue(':id', $id);
   $stmt->execute();

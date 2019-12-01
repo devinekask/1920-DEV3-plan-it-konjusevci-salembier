@@ -13,9 +13,9 @@ $routes = array(
     'action' => 'planner'
   )
   ,
-  'detail' => array(
+  'detailTemplate' => array(
     'controller' => 'Planner',
-    'action' => 'detail'
+    'action' => 'detailTemplate'
   )
 );
 

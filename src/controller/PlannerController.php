@@ -43,7 +43,7 @@ class PlannerController extends Controller {
   public function planner() {
     $this->set('title', 'Maak een plan');
   }
-  public function detail() {
+  public function detailTemplate() {
     if(!empty($_GET['id'])){
       $template = $this->templateDAO->selectById($_GET['id']);
       $excersises = $this->templateDAO->selectExcerciseById($_GET['id']);
