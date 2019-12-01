@@ -2,9 +2,12 @@
   <section class="planning planning--stap1">
     <div class="planning__wrapper">
       <ul class="steps">
-        <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=planner">1</a></li>
-        <li class="step"><a class="step__link" href="index.php?page=plannerstep2">2</a></li>
-        <li class="step"><a class="step__link" href="index.php?page=plannerstep3">3</a></li>
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap1" href="index.php?page=planner">1</a></li>
+        <li class="step"><a class="step__link" data-planner-class="planning planning--stap2"
+            href="index.php?page=plannerstep2">2</a></li>
+        <li class="step"><a class="step__link" data-planner-class="planning planning--stap3"
+            href="index.php?page=plannerstep3">3</a></li>
       </ul>
       <h2 class='hidden'>Planning</h2>
       <div class="input__wrapper">
@@ -54,10 +57,12 @@
   <section class="planning planning--stap2">
     <div class="planning__wrapper">
       <ul class="steps">
-        <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=planner">1</a></li>
-        <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=plannerstep2">2</a>
-        </li>
-        <li class="step"><a class="step__link" href="index.php?page=plannerstep3">3</a></li>
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap1" href="index.php?page=planner">1</a></li>
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap2" href="index.php?page=plannerstep2">2</a></li>
+        <li class="step"><a class="step__link" data-planner-class="planning planning--stap3"
+            href="index.php?page=plannerstep3">3</a></li>
       </ul>
       <h2 class='hidden'>Planning</h2>
       <div class="input__wrapper">
@@ -95,11 +100,12 @@
   <section class="planning planning--stap3">
     <div class="planning__wrapper exercise">
       <ul class="steps">
-        <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=planner">1</a></li>
-        <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=plannerstep2">2</a>
-        </li>
-        <li class="step step--active"><a class="step__link step__link--active" href="index.php?page=plannerstep3">3</a>
-        </li>
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap1" href="index.php?page=planner">1</a></li>
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap2" href="index.php?page=plannerstep2">2</a></li>
+        <li class="step step--active"><a class="step__link step__link--active"
+            data-planner-class="planning planning--stap3" href="index.php?page=plannerstep3">3</a></li>
       </ul>
       <h2 class="planner__title">LIST OF EXERCISES</h2>
       <div class="exercises__wrapper">
